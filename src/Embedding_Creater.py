@@ -50,6 +50,6 @@ class SimpleDocumentIndexer:
             print(f"Failed to save FAISS store: {e}")
 
 # Usage example
-pdf_files = [r"C:\\Users\\USER\Desktop\\hrbot\src\\nvidia-earnings.pdf"]  # Use the absolute path
+pdf_files = []  # Use the absolute path
 indexer = SimpleDocumentIndexer(pdf_files=pdf_files, openai_api_key=OPENAI_API_KEY)
 indexer.process_documents()
